@@ -2,15 +2,19 @@
 
 ## Overview
 
-The TodoList application is a simple task management tool built with React and MobX. It allows users to create, edit, delete, and mark tasks as completed. The tasks are stored in the browser's localStorage, ensuring persistence across sessions.
+Simple task management tool built with React and MobX. For users to create, edit, delete, and mark tasks as completed. The tasks are stored in the browser's localStorage.
+
+##Purpose
+
+For learning Mobx - state management library
 
 ## Features
 
-- Add new tasks with custom text.
+- Add new tasks.
 - Mark tasks as done or undone.
 - Edit existing tasks.
 - Delete tasks.
-- Persistent storage using localStorage.
+- Keep tasks in storage using localStorage.
 
 ## Technologies Used
 
@@ -24,11 +28,13 @@ The TodoList application is a simple task management tool built with React and M
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/todolist.git
+   git clone https://github.com/sharipovikromjon/todolist.git
    cd to-do-list_mobx
    npm i
+   npm run dev
    npm run dev
 
    and open "localhost:5173" in the browser
    ```
+
 
