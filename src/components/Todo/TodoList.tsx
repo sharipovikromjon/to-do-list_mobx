@@ -1,38 +1,20 @@
-import {
-  TodoEditInput,
-  TodoDeleteButton,
-  TodoToggleCheckbox,
-  TodoAddInput,
-} from "../Todo";
+import { TodoAddInput } from "../Todo";
 import { observer } from "mobx-react-lite";
 import { myTodoStore } from "../../stores/todoStore";
-import { useState } from "react";
 import { Typography } from "antd";
 import { CiCircleCheck } from "react-icons/ci";
 import { toast, ToastContainer } from "react-toastify";
 const { Title } = Typography;
 
 const TodoList: React.FC = observer(() => {
-  const [text, setText] = useState("");
-
-  // To clean the input field and trim the empty spaces
-  const handleAddTask = () => {
-    if (text.trim()) {
-      myTodoStore.addTask(text);
-      setText("");
-    }
-  };
-
   return (
     <div>
       <Title style={{ textAlign: "center", textTransform: "uppercase" }}>
         Todo List
       </Title>
 
-      {/* Add task input */}
       <TodoAddInput />
 
-      {/* List of tasks */}
       <ul
         style={{
           marginTop: "1rem",
@@ -116,7 +98,7 @@ const TodoList: React.FC = observer(() => {
                       textTransform: "uppercase",
                       marginTop: "15px",
                       display: "flex",
-                      alignItems: "center", // Ensure alignment with the checkbox
+                      alignItems: "center",
                     }}
                   >
                     {item.text.charAt(0).toUpperCase() + item.text.slice(1)}
