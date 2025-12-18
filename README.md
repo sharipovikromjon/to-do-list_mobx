@@ -4,7 +4,7 @@
 
 Simple task management tool built with React and MobX. For users to create, edit, delete, and mark tasks as completed. The tasks are stored in the browser's localStorage.
 
-## Purpose
+## Objective
 
 For learning Mobx - state management library
 
@@ -32,10 +32,10 @@ For learning Mobx - state management library
    cd to-do-list_mobx
    npm i
    npm run dev
-   npm run dev
 
    and open "localhost:5173" in the browser
    ```
+
 
 
 
